@@ -7,8 +7,8 @@
 <body>
 <h1>Hejo</h1>
 <br/>
-<%--<a href="hello-servlet">Hello Servlet</a>--%>
-<form method="post" action="login.jsp">
+<%--<form method="post" action="login.jsp">--%>
+<form method="post" action="pracownik.jsp">
     Podaj swój login: <br />
     <input type="text" name="name" /><br />
     Podaj swoje hasło: <br />
