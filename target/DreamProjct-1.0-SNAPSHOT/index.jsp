@@ -15,5 +15,6 @@
     <input type="text" name="password" /><br />
     <input type="submit" value="zaloguj">
 </form>
+<a src="testBazy.jsp">Test bazy - wszyscy użytkownicy</a>
 </body>
 </html>

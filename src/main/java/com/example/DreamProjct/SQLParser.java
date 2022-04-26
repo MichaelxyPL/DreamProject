@@ -14,4 +14,9 @@ public class SQLParser {
                     "tblogin.name="+name+" and tblogin.pswr="+password;
         return query;
     }
+
+    public String getUsers() {
+        query = "select id, firstname, lastname, email, reg_date, salt, password from tbusers";
+        return query;
+    }
 }

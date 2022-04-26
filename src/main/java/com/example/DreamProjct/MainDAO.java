@@ -20,6 +20,7 @@ public class MainDAO {
     private SQLParser parser;
 
     public MainDAO() {
+        parser=new SQLParser();
     }
 
     /**
@@ -38,9 +39,13 @@ public class MainDAO {
      * zwolnienie zasobów i zamknięcie połączenia
      * @throws SQLException
      */
-    public void closeConnect() throws SQLException {
-        statement.close();
-        connection.close();
+    public void closeConnect(){
+        try {
+            statement.close();
+            connection.close();
+        }catch (Exception e){
+            return;
+        }
     }
 
     /**
@@ -67,6 +72,52 @@ public class MainDAO {
 //            e.printStackTrace();
             return -1;
         }
+    }
+
+    public String geUsers() {
+        String users="";
+        try {
+            this.setConnect();
+
+            ResultSet result = statement.executeQuery(parser.getUsers());
+            if(result.next())
+            {
+                users+=result.getString("firstname")+" "+result.getString("lastname");
+            }
+        } catch (ClassNotFoundException e) {
+            return "Błąd silnika";
+        } catch (SQLException throwables) {
+            return "Błąd bazy danych";
+        }finally{
+            this.closeConnect();
+        }
+
+        return users;
+
+    }
+
+    public Book[] getBooks() {
+        Book[] books = new Book[3];
+
+        try {
+            this.setConnect();
+
+            ResultSet result = statement.executeQuery("SELECT id,name, price FROM tbproducts");
+            int number=0;
+            if(result.next())
+            {
+                books[number]=new Book(result.getString("name"),""+result.getFloat("price"));
+                number++;
+            }
+        } catch (Exception e) {
+//            e.printStackTrace();
+//            books[1]=new Book(e.getMessage(),"0");
+        }finally{
+            this.closeConnect();
+        }
+
+        return books;
+
     }
 
     /**
