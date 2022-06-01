@@ -1,6 +1,10 @@
 package com.example.DreamProjct;
 
 import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
+
+//TODO tabela zamówień, zapis zamóenia, pobranie listy zamóień, zmiana statusu na zapłącone, dostarczone.
 
 /**
  * Klasa służąca do łączenia się z bazą
@@ -96,28 +100,23 @@ public class MainDAO {
 
     }
 
-    public Book[] getBooks() {
-        Book[] books = new Book[3];
+    public List<Book> getBooks() {
+        List<Book> books = new LinkedList<>();
 
         try {
             this.setConnect();
-
             ResultSet result = statement.executeQuery("SELECT id,name, price FROM tbproducts");
-            int number=0;
-            if(result.next())
-            {
-                books[number]=new Book(result.getString("name"),""+result.getFloat("price"));
-                number++;
+
+            if(result.next()){
+                books.add(new Book(result.getString("name"),""+result.getFloat("price")));
             }
         } catch (Exception e) {
-//            e.printStackTrace();
-//            books[1]=new Book(e.getMessage(),"0");
+//            System.out.println(e.getMessage());
         }finally{
             this.closeConnect();
         }
 
         return books;
-
     }
 
     /**

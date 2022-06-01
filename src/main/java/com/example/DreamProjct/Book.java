@@ -9,7 +9,7 @@ public class Book {
     }
 
     public String getImg() {
-        return "//images01.nicepage.com/f5/a7/f5a7875fad2aae5b1c72b7ab3340d2d4.png";
+        return "https://images01.nicepage.com/f5/a7/f5a7875fad2aae5b1c72b7ab3340d2d4.png";
     }
 
     public String getName() {

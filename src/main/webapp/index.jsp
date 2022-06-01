@@ -1,20 +1,22 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<jsp:useBean id="builder" class="com.example.DreamProjct.PageBuilder"
+             scope="page"></jsp:useBean>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Projekt</title>
+    <title>Księgarnia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://localhost/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/assets/css/plugins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<h1>Hejo</h1>
-<br/>
-<%--<form method="post" action="login.jsp">--%>
-<form method="post" action="pracownik.jsp">
-    Podaj swój login: <br />
-    <input type="text" name="name" /><br />
-    Podaj swoje hasło: <br />
-    <input type="text" name="password" /><br />
-    <input type="submit" value="zaloguj">
-</form>
-<a src="testBazy.jsp">Test bazy - wszyscy użytkownicy</a>
+<%= builder.makeHeader() %>
+
+
+
+<%= builder.getFooter() %>
 </body>
 </html>
+

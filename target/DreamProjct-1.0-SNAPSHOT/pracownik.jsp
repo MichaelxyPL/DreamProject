@@ -10,6 +10,7 @@
 </head>
 <body>
 <h1>Panel główny</h1>
+<a href="/product.jsp">link</a>
 <jsp:useBean id="user" class="com.example.DreamProjct.User"
              scope="session"/>
 <jsp:setProperty property="*" name="user" />
