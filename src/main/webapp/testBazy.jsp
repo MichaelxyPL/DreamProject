@@ -1,6 +1,6 @@
 <body>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="dbc" class="com.example.DreamProjct.MainDAO"
+<jsp:useBean id="dbc" class="com.DreamProject.MainDAO"
              scope="session"></jsp:useBean>
 
 <!-- Wyświetlenie nazwy użytkownika. -->

@@ -1,4 +1,4 @@
-package com.example.DreamProjct;
+package com.DreamProject;
 
 import java.io.*;
 import javax.servlet.http.*;

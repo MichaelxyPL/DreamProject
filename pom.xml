@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>DreamProjct</artifactId>
+    <artifactId>DreamProject</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>DreamProjct</name>
+    <name>DreamProject</name>
     <packaging>war</packaging>
 
     <properties>

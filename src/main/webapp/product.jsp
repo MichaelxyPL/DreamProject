@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<jsp:useBean id="builder" class="com.example.DreamProjct.PageBuilder"--%>
+<%--<jsp:useBean id="builder" class="com.DreamProject.PageBuilder"--%>
 <%--             scope="session"></jsp:useBean>--%>
-<jsp:useBean id="builder" class="com.example.DreamProjct.PageBuilder"
+<jsp:useBean id="builder" class="com.DreamProject.PageBuilder"
              scope="page"></jsp:useBean>
 <!DOCTYPE html>
 <html>
