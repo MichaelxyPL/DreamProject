@@ -9,30 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.sql/dreamprojct.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.sql/dreamprojct.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Discounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/MainDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/PageBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/SQLParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DreamProjct/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pracownik.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pracownik.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testBazy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/testBazy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawienie struktury paczek">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/SQLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/HelloServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/MainDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/pracownik.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/pracownik.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/SQLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/pracownik.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/HelloServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/MainDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/SQLParser.class" beforeDir="false" />
@@ -175,8 +163,16 @@
       <workItem from="1654120486318" duration="989000" />
       <workItem from="1654155020707" duration="854000" />
       <workItem from="1654157589149" duration="239000" />
-      <workItem from="1654159587834" duration="1950000" />
+      <workItem from="1654159587834" duration="2734000" />
     </task>
+    <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
+      <created>1654162486505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654162486506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,5 +210,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/DreamProject" />
     </ignored-roots>
+    <MESSAGE value="Poprawienie struktury paczek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie struktury paczek" />
   </component>
 </project>
