@@ -29,7 +29,15 @@ public class User {
     }
 
     public boolean isLogged() {
-        return !name.isEmpty();
+        return (!(this.name == null || this.name.length() == 0));
+    }
+
+    public void validate(Login login) {
+        MainDAO db = new MainDAO();
+        if(login.getName()!=""){
+            db.addUser(login.getName(),login.getEmail(),login.getPassword());
+        }
+
     }
 }
 

@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="DreamProject.war">
+    <root id="archive" name="DreamProject-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="DreamProject:war exploded" />
     </root>
   </artifact>

@@ -1,5 +1,8 @@
 package com.DreamProject;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.SecureRandom;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,7 +14,7 @@ import java.util.List;
  */
 public class MainDAO {
     /*konfiguracja połączenia z serwerem*/
-    private final static String DBURL = "jdbc:mysql://localhost/DreamProject";
+    private final static String DBURL = "jdbc:mysql://localhost/DreamProjct";
     private final static String DBUSER = "root";
     private final static String DBPASS = "";
     private final static String DBDRIVER = "com.mysql.cj.jdbc.Driver";
@@ -22,6 +25,7 @@ public class MainDAO {
     private Statement statement;
     //parser zapytań SQL
     private SQLParser parser;
+    private PreparedStatement stmt = null;
 
     public MainDAO() {
         parser=new SQLParser();
@@ -117,6 +121,40 @@ public class MainDAO {
         }
 
         return books;
+    }
+
+    public void addUser(String name, String email, String password) {
+        SecureRandom random = new SecureRandom();
+        byte[] salt = new byte[16];
+        random.nextBytes(salt);
+
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("MD5");
+        }catch (Exception e){}
+        md.update(salt);
+
+        byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
+        System.out.println(salt);
+        System.out.println(hashedPassword);
+
+
+
+
+        try {
+            this.setConnect();
+//            ResultSet result = statement.executeQuery("INSERT INTO tbusers (name, email, password, salt) VALUES ("+name+", "+email+", "+hashedPassword+", "+salt+")");
+            stmt = this.connection.prepareStatement("INSERT INTO tbusers (name, email, password, salt) values (?, ?,?,?)");
+            stmt.setString(1, name);
+            stmt.setString(2, email);
+            stmt.setString(3, String.valueOf(hashedPassword));
+            stmt.setString(4, String.valueOf(salt));
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }finally{
+            this.closeConnect();
+        }
     }
 
     /**
