@@ -7,7 +7,7 @@ public class PageBuilder {
         return "<div class=\"container-fluid\">\n" +
                 "    <div class=\"row align-items-center py-3 px-xl-5\">\n" +
                 "        <div class=\"col-lg-3 d-none d-lg-block\"><a class=\"text-decoration-none\">\n" +
-                "            <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border px-3 mr-1\">E</span>Shopper</h1>\n" +
+                "            <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border px-3 mr-1\">Księgarnia</span>Zajebista</h1>\n" +
                 "        </a></div>\n" +
                 "        <div class=\"col-lg-6 col-6 text-left\">\n" +
                 "            <form action=\"#\" method=\"post\">\n" +
@@ -17,7 +17,7 @@ public class PageBuilder {
                 "                </div>\n" +
                 "            </form>\n" +
                 "        </div>\n" +
-                "        <div class=\"col-lg-3 col-6 text-right\"><a class=\"btn border\"><i class=\"fa fa-heart text-primary\"></i> <span class=\"badge\">0</span></a> <a class=\"btn border\"><i class=\"fa fa-shopping-cart text-primary\"></i> <span class=\"badge\">0</span></a></div>\n" +
+                "        <div class=\"col-lg-3 col-6 text-right\"> <a class=\"btn border\" href=\"cart.jsp\"><i class=\"fa fa-shopping-cart text-primary\"></i> <span class=\"badge\">0</span></a></div>\n" +
                 "    </div>\n" +
                 "</div>"+
                 this.makeCategoryHeader();
@@ -30,16 +30,15 @@ public class PageBuilder {
                 "      <h6 class=\"m-0\">Categories</h6>\n" +
                 "      <i class=\"fa fa-angle-down text-dark\"></i></a>\n" +
                 "      <nav class=\"collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0\" id=\"navbar-vertical\">\n" +
-                "        <div class=\"navbar-nav w-100 overflow-hidden\" style=\"height:410px\">\n" +
-                "          <div class=\"nav-item dropdown\"><a class=\"nav-link\" data-toggle=\"dropdown\">Dresses <i class=\"fa fa-angle-down float-right mt-1\"></i></a>\n" +
-                "            <div class=\"dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0\"><a class=\"dropdown-item\">Men's Dresses</a> <a class=\"dropdown-item\">Women's Dresses</a> <a class=\"dropdown-item\">Baby's Dresses</a></div>\n" +
+                "        <div class=\"navbar-nav w-100 overflow-hidden\" style=\"height:123px\">\n" +
+                "          <div class=\"nav-item dropdown\"><a class=\"nav-link\" data-toggle=\"dropdown\" href=\"dresses.jsp\">Dresses </a>\n" +
                 "          </div>\n" +
-                "          <a class=\"nav-item nav-link\">Shirts</a> <a class=\"nav-item nav-link\">Jeans</a> <a class=\"nav-item nav-link\">Swimwear</a> <a class=\"nav-item nav-link\">Sleepwear</a> <a class=\"nav-item nav-link\">Sportswear</a> <a class=\"nav-item nav-link\">Jumpsuits</a> <a class=\"nav-item nav-link\">Blazers</a> <a class=\"nav-item nav-link\">Jackets</a> <a class=\"nav-item nav-link\">Shoes</a></div>\n" +
+                "          <a class=\"nav-item nav-link\" href=\"shirts.jsp\">Shirts</a> <a class=\"nav-item nav-link\" href=\"jeans.jsp\">Jeans</a> 0</div>\n" +
                 "      </nav>\n" +
                 "    </div>\n" +
                 "    <div class=\"col-lg-9\">\n" +
                 "      <nav class=\"navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0\"><a class=\"text-decoration-none d-block d-lg-none\">\n" +
-                "        <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border px-3 mr-1\">E</span>Shopper</h1>\n" +
+                "        <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border px-3 mr-1\">Księgarnia</span>Zajebista</h1>\n" +
                 "        </a>\n" +
                 "        <button type=\"button\" class=\"navbar-toggler\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\"><span class=\"navbar-toggler-icon\"></span></button>\n" +
                 "        <div class=\"collapse navbar-collapse justify-content-between\" id=\"navbarCollapse\">\n" +
@@ -48,7 +47,7 @@ public class PageBuilder {
                 "              <div class=\"dropdown-menu rounded-0 m-0\"><a class=\"dropdown-item\">Shopping Cart</a> <a class=\"dropdown-item\">Checkout</a></div>\n" +
                 "            </div>\n" +
                 "            <a class=\"nav-item nav-link\">Contact</a></div>\n" +
-                "          <div class=\"navbar-nav ml-auto py-0\"><a class=\"nav-item nav-link\">Login</a> <a class=\"nav-item nav-link\">Register</a></div>\n" +
+                "          <div class=\"navbar-nav ml-auto py-0\"><a class=\"nav-item nav-link\" href=\"login.jsp\">Login</a> <a class=\"nav-item nav-link\" href=\"register.jsp\">Register</a></div>\n" +
                 "        </div>\n" +
                 "      </nav>\n" +
                 "      <div id=\"header-carousel\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
@@ -96,10 +95,10 @@ public class PageBuilder {
         return "<div class=\"container-fluid bg-secondary text-dark mt-5 pt-5\">\n" +
                 "      <div class=\"row px-xl-5 pt-5\">\n" +
                 "        <div class=\"col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5\"><a class=\"text-decoration-none\">\n" +
-                "          <h1 class=\"mb-4 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border border-white px-3 mr-1\">E</span>Shopper</h1>\n" +
+                "          <h1 class=\"mb-4 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border border-white px-3 mr-1\">Księgarnia</span>Zajebista</h1>\n" +
                 "          </a>\n" +
                 "          <p>Bo kochamy książki. I wasze pieniądze &lt;3</p>\n" +
-                "          <p class=\"mb-2\"><i class=\"fa fa-map-marker-alt text-primary mr-3\"></i>Kwiatowa 1238, Warszawa</p>\n" +
+                "          <p class=\"mb-2\"><i class=\"fa fa-map-marker-alt text-primary mr-3\"></i>Kwiatowa 2137, Warszawa</p>\n" +
                 "          \n" +
                 "          \n" +
                 "        </div>\n" +
