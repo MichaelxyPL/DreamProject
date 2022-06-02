@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawienie struktury paczek">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/SQLParser.java" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawienie struktury paczek part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/HelloServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/MainDAO.class" beforeDir="false" />
@@ -54,8 +56,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ksepski2\IdeaProjects\DreamProject\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ksepski2\IdeaProjects\DreamProject\src\main\webapp" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -163,7 +174,8 @@
       <workItem from="1654120486318" duration="989000" />
       <workItem from="1654155020707" duration="854000" />
       <workItem from="1654157589149" duration="239000" />
-      <workItem from="1654159587834" duration="2734000" />
+      <workItem from="1654159587834" duration="3077000" />
+      <workItem from="1654165417377" duration="680000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -172,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654162486506</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Poprawienie struktury paczek part 2">
+      <created>1654162909706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654162909706</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +230,7 @@
       <path value="$PROJECT_DIR$/DreamProject" />
     </ignored-roots>
     <MESSAGE value="Poprawienie struktury paczek" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie struktury paczek" />
+    <MESSAGE value="Poprawienie struktury paczek part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie struktury paczek part 2" />
   </component>
 </project>
