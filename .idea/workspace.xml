@@ -2,31 +2,61 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="DreamProjct:war exploded" />
+      <artifact name="DreamProject:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawienie struktury paczek part 2">
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Build + poprawka ścieżki do css'ów">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DreamProjct_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DreamProject_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DreamProjct_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DreamProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/plugins.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/MainDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/SQLParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/classes/com/example/DreamProjct/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProjct-1.0-SNAPSHOT/pracownik.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/MainDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/SQLParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/DreamProjct/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sql/dreamprojct.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.sql/dreamproject.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DreamProjct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DreamProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Discounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/SQLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/cart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/css/plugins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/orders.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/pracownik.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/productTemplate.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/testBazy.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Discounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/SQLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +88,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,12 +99,25 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DreamProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DreamProject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="DreamProjct:war exploded">
+        <artifact name="DreamProject:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/DreamProjct_war_exploded" />
+            <option name="CONTEXT_PATH" value="/DreamProject_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -152,7 +195,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="DreamProjct:war exploded" />
+          <artifact name="DreamProject:war exploded" />
         </option>
       </method>
     </configuration>
@@ -175,7 +218,8 @@
       <workItem from="1654155020707" duration="854000" />
       <workItem from="1654157589149" duration="239000" />
       <workItem from="1654159587834" duration="3077000" />
-      <workItem from="1654165417377" duration="680000" />
+      <workItem from="1654165417377" duration="1688000" />
+      <workItem from="1654183805188" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -191,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654162909706</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Build + poprawka ścieżki do css'ów">
+      <created>1654166327396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654166327396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +282,11 @@
     </ignored-roots>
     <MESSAGE value="Poprawienie struktury paczek" />
     <MESSAGE value="Poprawienie struktury paczek part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawienie struktury paczek part 2" />
+    <MESSAGE value="Build + poprawka ścieżki do css'ów" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build + poprawka ścieżki do css'ów" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
