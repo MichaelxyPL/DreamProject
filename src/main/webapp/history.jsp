@@ -11,6 +11,24 @@
     <title>Historia Twoich zamówień</title>
 </head>
 <body>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">L.P.</th>
+        <th scope="col">Data zamówienia</th>
+        <th scope="col">Lista produktów</th>
+        <th scope="col">Ilość</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>...............</td>
+        <td>..................</td>
+        <td>...................</td>
+    </tr>
 
+    </tbody>
+</table>
 </body>
 </html>
