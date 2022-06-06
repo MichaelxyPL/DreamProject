@@ -105,7 +105,7 @@ public class PageBuilder {
                 "        <div class=\"col-lg-8 col-md-12\">\n" +
                 "          <div class=\"row\">\n" +
                 "            <div class=\"col-md-4 mb-5\">\n" +
-                "              <h5 class=\"font-weight-bold text-dark mb-4\">Quick Links</h5>\n" +
+                "              <h5 class=\"font-weight-bold text-dark mb-4\">Na skróty</h5>\n" +
                 "              <div class=\"d-flex flex-column justify-content-start\"><a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Home</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Our Shop</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shop Detail</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shopping Cart</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Checkout</a> <a class=\"text-dark\" ><i class=\"fa fa-angle-right mr-2\"></i>Contact Us</a></div>\n" +
                 "            </div>\n" +
                 "            <div class=\"col-md-4 mb-5\">\n" +
