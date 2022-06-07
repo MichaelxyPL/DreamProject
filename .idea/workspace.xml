@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Start tamplate order.jsp">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Front-End zamówienia książki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -185,7 +197,7 @@
       <workItem from="1654165417377" duration="1688000" />
       <workItem from="1654183805188" duration="1308000" />
       <workItem from="1654540513521" duration="5630000" />
-      <workItem from="1654591430966" duration="4502000" />
+      <workItem from="1654591430966" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -236,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654546787649</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Front-End zamówienia książki">
+      <created>1654596040553</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654596040553</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +299,8 @@
     <MESSAGE value="zmiana nazwy strony" />
     <MESSAGE value="test" />
     <MESSAGE value="Start tamplate order.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start tamplate order.jsp" />
+    <MESSAGE value="Front-End zamówienia książki" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-End zamówienia książki" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
