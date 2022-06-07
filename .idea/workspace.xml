@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Nieudolne zmiany PageBuilder.java">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index2.jsp" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,6 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -203,8 +202,8 @@
       <workItem from="1654165417377" duration="1688000" />
       <workItem from="1654183805188" duration="1308000" />
       <workItem from="1654540513521" duration="5630000" />
-      <workItem from="1654591430966" duration="10377000" />
-      <workItem from="1654618153936" duration="6581000" />
+      <workItem from="1654591430966" duration="10195000" />
+      <workItem from="1654620618482" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -290,21 +289,7 @@
       <option name="project" value="LOCAL" />
       <updated>1654601333012</updated>
     </task>
-    <task id="LOCAL-00013" summary="Początek prac z index.jsp">
-      <created>1654602024362</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1654602024362</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Nieudolne zmiany PageBuilder.java">
-      <created>1654619192403</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1654619192403</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,9 +338,7 @@
     <MESSAGE value="Front-End history.jsp" />
     <MESSAGE value="Front-End produktu audiobook" />
     <MESSAGE value="Porządkowanie plików" />
-    <MESSAGE value="Początek prac z index.jsp" />
-    <MESSAGE value="Nieudolne zmiany PageBuilder.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nieudolne zmiany PageBuilder.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Porządkowanie plików" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
