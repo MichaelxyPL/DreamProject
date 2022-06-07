@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 26 Kwi 2022, 22:46
+-- Czas generowania: 07 Cze 2022, 23:19
 -- Wersja serwera: 10.4.17-MariaDB
 -- Wersja PHP: 8.0.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `DreamProject`
+-- Baza danych: `dreamprojct`
 --
 
 -- --------------------------------------------------------
@@ -69,8 +69,8 @@ INSERT INTO `tborders` (`id`, `userid`, `orderdt`) VALUES
 
 CREATE TABLE `tbproducts` (
   `id` int(6) UNSIGNED NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `type` varchar(30) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
   `price` float DEFAULT NULL,
   `cnt` int(6) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -110,8 +110,8 @@ INSERT INTO `tbuserroles` (`id`, `userid`, `roleid`) VALUES
 
 CREATE TABLE `tbusers` (
   `id` int(10) UNSIGNED NOT NULL,
-  `firstname` varchar(30) NOT NULL,
-  `lastname` varchar(30) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `surname` text NOT NULL,
   `email` varchar(50) DEFAULT NULL,
   `reg_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `salt` varchar(255) DEFAULT NULL,
@@ -122,8 +122,14 @@ CREATE TABLE `tbusers` (
 -- Zrzut danych tabeli `tbusers`
 --
 
-INSERT INTO `tbusers` (`id`, `firstname`, `lastname`, `email`, `reg_date`, `salt`, `password`) VALUES
-(1, 'ktos', 'ktosiowy', 'aa@aa.aa', '2022-04-25 21:06:34', 'aaaa', 'MD5(\'aaaaaaa\')');
+INSERT INTO `tbusers` (`id`, `name`, `surname`, `email`, `reg_date`, `salt`, `password`) VALUES
+(1, 'ktos', '', 'aa@aa.aa', '2022-04-25 21:06:34', 'aaaa', 'MD5(\'aaaaaaa\')'),
+(2, 'abc', '', 'abc@abc.abc', '2022-06-02 19:55:48', '[B@5f29742d', '[B@76a34c2d'),
+(3, 'sdfsdfsd', 'fsdfsdfsd', 'fsdfsdf@sdfsdf.sdfsdf', '2022-06-07 20:58:27', '$2a$10$fpxMJhbMkzR67AOT4nNgRu', '$2a$10$fpxMJhbMkzR67AOT4nNgRuMHEg.JcW5uft8EoO4v1G84lMAhuIhd.'),
+(4, 'sdfsdfsd', 'fsdfsdfsd', 'fsdfsdf@sdfsdf.sdfsdf', '2022-06-07 21:09:56', '$2a$10$X0tBs9yVZ1dm07lCBQSIHu', '$2a$10$X0tBs9yVZ1dm07lCBQSIHuZx837fo9xDcXJj.jYTSoZFaQZTEAydC'),
+(5, 'sdfsdfsdxcvxcv', 'fsdfsdfsdxcvxcv', 'fsdfsdf@sdfsdf.sdfsdfxcvxcv', '2022-06-07 21:10:05', '$2a$10$Ju7.XdhK9mr5MNoc3nEvhe', '$2a$10$Ju7.XdhK9mr5MNoc3nEvheRVNamRkIxdq747470SBjL8XTFmQxtPq'),
+(6, 'sdfsdfsdxcvxcv', 'fsdfsdfsdxcvxcv', 'fsdfsdf@sdfsdf.sdfsdfxcvxcv', '2022-06-07 21:10:41', '$2a$10$R326pOyeWIqBdqxVofldfO', '$2a$10$R326pOyeWIqBdqxVofldfOTOXyzEOwnknuME7SsPw3Nq/ipwQcPsO'),
+(7, 'sdfsdfsdxcvxcv', 'fsdfsdfsdxcvxcv', 'fsdfsdf@sdfsdf.sdfsdfxcvxcv', '2022-06-07 21:11:33', '$2a$10$MHIKlP3GDDM417tbsHeeOe', '$2a$10$MHIKlP3GDDM417tbsHeeOeuM.dlaNNHxSvyCjALD1G7ZpCUGRDEbu');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -191,7 +197,7 @@ ALTER TABLE `tbuserroles`
 -- AUTO_INCREMENT dla tabeli `tbusers`
 --
 ALTER TABLE `tbusers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

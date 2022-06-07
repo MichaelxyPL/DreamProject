@@ -29,6 +29,8 @@
     </style>
 </head>
 <body style="background-color: #5d0569;">
+<%--Test działania zapisu objektu w sesji--%>
+Witaj <%= user.getName()%>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255 255 255 / 30%);">
         <div class="container ">
             <a class="navbar-brand font-weight-bold text-white h1" href="#">Księgarnia "Dla Wybranych"</a>
