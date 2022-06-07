@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" afterDir="false" />
-    </list>
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Nowy index2.jsp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
