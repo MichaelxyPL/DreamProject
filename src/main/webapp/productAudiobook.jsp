@@ -21,7 +21,7 @@
                 <div class="card bg-transparent border-0">
                     <div class="row">
                         <div class="col-md-4 mb-4">
-                            <img src="https://cdn.bonito.pl/zdjecia/3/4d763a-kod-leonarda-da-vinci.jpg" class="img-thumbnail" alt="...">
+                            <img src="https://www.publio.pl/files/product/product_w320/b0/9a/34/1015472-gate-janusz-leon-wisniewski-1.jpg?v=2809104" class="img-thumbnail" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -37,7 +37,7 @@
                 <h1>36,99 zł</h1>
                 <form class="g-3">
                     <div class="mt-4">
-                        <button class="btn btn-success" type="submit">Pobierz</button>
+                        <button class="btn btn-primary" type="submit">Pobierz</button>
                     </div>
                 </form>
                 <h2>Dostępne Online!</h2>
