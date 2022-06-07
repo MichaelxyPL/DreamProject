@@ -7,7 +7,7 @@ public class PageBuilder {
         return "<div class=\"container-fluid\">\n" +
                 "    <div class=\"row align-items-center py-3 px-xl-5\">\n" +
                 "        <div class=\"col-lg-3 d-none d-lg-block\"><a class=\"text-decoration-none\">\n" +
-                "            <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border px-3 mr-1\">Księgarnia</span>Zajebista</h1>\n" +
+                "            <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-light font-weight-bold border-0 px-3 mr-1\">Księgarnia</span></h1>\n" +
                 "        </a></div>\n" +
                 "        <div class=\"col-lg-6 col-6 text-left\">\n" +
                 "            <form action=\"#\" method=\"post\">\n" +
