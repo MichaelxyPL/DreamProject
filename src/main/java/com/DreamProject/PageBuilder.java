@@ -6,14 +6,14 @@ public class PageBuilder {
     public String makeHeader(){
         return "    <nav class=\"navbar navbar-expand-lg navbar-light\" style=\"background-color: rgb(255 255 255 / 30%);\">\n" +
                 "        <div class=\"container \">\n" +
-                "            <a class=\"navbar-brand font-weight-bold text-white h1\" href=\"#\">Księgarnia \"Dla Wybranych\"</a>\n" +
+                "            <a class=\"navbar-brand font-weight-bold text-white h1\" href=\"index.jsp\">Księgarnia \"Dla Wybranych\"</a>\n" +
                 "            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
                 "                <span class=\"navbar-toggler-icon\"></span>\n" +
                 "            </button>\n" +
                 "            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n" +
                 "                <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n" +
                 "                    <li class=\"nav-item\">\n" +
-                "                        <a class=\"nav-link active h5\" aria-current=\"page\" href=\"#\">Strona Główna</a>\n" +
+                "                        <a class=\"nav-link active h5\" aria-current=\"page\" href=\"index.jsp\">Strona Główna</a>\n" +
                 "                    </li>\n" +
                 "                    <li class=\"nav-item dropdown\">\n" +
                 "                        <a class=\"nav-link dropdown-toggle h5\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n" +

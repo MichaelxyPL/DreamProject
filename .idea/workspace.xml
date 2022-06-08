@@ -9,16 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Front-end składania zamówienia i template successOrder.jsp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/successOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/successOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/User.class" beforeDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Front-end zaakceptowanego zamówienia">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +203,7 @@
       <workItem from="1654620618482" duration="612000" />
       <workItem from="1654628499234" duration="696000" />
       <workItem from="1654714038156" duration="2749000" />
-      <workItem from="1654717941583" duration="1198000" />
+      <workItem from="1654717941583" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -311,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654714581029</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Front-end zaakceptowanego zamówienia">
+      <created>1654719216985</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654719216985</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +362,8 @@
     <MESSAGE value="New index.jsp" />
     <MESSAGE value="new login.jsp" />
     <MESSAGE value="Front-end składania zamówienia i template successOrder.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front-end składania zamówienia i template successOrder.jsp" />
+    <MESSAGE value="Front-end zaakceptowanego zamówienia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end zaakceptowanego zamówienia" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
