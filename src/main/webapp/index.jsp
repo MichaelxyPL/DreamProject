@@ -113,10 +113,10 @@ Witaj <%= user.getName()%>
             </button>
         </div>
     </div>
-    <div class="container" style="min-height: 200px;">
+    <div class="container">
 <%--TODO        Treść strony--%>
     </div>
-    <footer class="text-center text-lg-start bg-pink text-white">
+    <footer class="text-center text-lg-start bg-pink text-white fixed-bottom">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
             <div class="me-5 d-none d-lg-block">
                 <span>Znajdź nas w sieci:</span>

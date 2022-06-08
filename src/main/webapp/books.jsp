@@ -38,6 +38,6 @@
         </div>
     </div>
 </div>
-<footer class="text-center text-lg-start bg-pink text-white"><%= builder.getFooter() %></footer>
+<footer class="text-center text-lg-start bg-pink text-white fixed-bottom"><%= builder.getFooter() %></footer>
 </body>
 </html>
