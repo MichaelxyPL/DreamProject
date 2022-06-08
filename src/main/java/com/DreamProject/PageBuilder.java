@@ -107,15 +107,41 @@ public class PageBuilder {
     }
 
     private String showProduct(Book book){
-        return "<div class=\"u-container-style u-expand-resize u-layout-cell u-size-20 u-size-20-md u-layout-cell-2\">\n" +
-                "                <div class=\"u-container-layout u-container-layout-3\">\n" +
-                "                    <img class=\"u-image u-image-2\" src=\""+book.getImg()+"\"></img>\n" +
-                "                    <h4 class=\"u-align-center u-text u-text-custom-color-2 u-text-5\">\n" +
-                "                        <br>"+book.getName()+"\n" +
-                "                    </h4>\n" +
-                "                    <p class=\"u-align-center u-text u-text-6\">"+book.getPrice()+"</p>\n" +
+        return "    <div class=\"container text-white\" style=\"background-color: #5d0569;\">\n" +
+                "        <div class=\"row pt-4 mb-4\">\n" +
+                "            <div class=\"col-md-8 pt-3 rounded\" style=\"background-color: rgb(255 255 255 / 30%);\">\n" +
+                "                <div class=\"card bg-transparent border-0\">\n" +
+                "                    <div class=\"row\">\n" +
+                "                        <div class=\"col-md-4 mb-4\">\n" +
+                "                            <img src=\"https://cdn.bonito.pl/zdjecia/3/4d763a-kod-leonarda-da-vinci.jpg\" class=\"img-thumbnail\" alt=\"...\">\n" +
+                "                        </div>\n" +
+                "                        <div class=\"col-md-8\">\n" +
+                "                            <div class=\"card-body\">\n" +
+                "                                <h1 class=\"card-title\">Kod Leonarda da Vinci</h1>\n" +
+                "                                <p class=\"card-text\">Autor: Dan Brown</p>\n" +
+                "                                <p class=\"card-text\">Donec nec finibus purus, quis varius turpis. Phasellus sollicitudin in turpis eu blandit. Pellentesque justo ipsum, maximus et magna a, lacinia fringilla metus. Fusce pulvinar lacus quam, ac venenatis elit egestas non. Curabitur eu placerat lorem, vulputate maximus odio. Proin viverra nibh eros, sed rhoncus ligula consectetur ac. Nunc rhoncus justo tellus, sit amet scelerisque elit lacinia eu. Phasellus sed ex nec ligula aliquet condimentum sed sit amet nisi. Integer at nunc pulvinar, ultrices orci in, vulputate diam. Aliquam tempus, mauris ac auctor molestie, odio nibh finibus metus, quis venenatis tellus leo at lacus.</p>\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "                    </div>\n" +
                 "                </div>\n" +
-                "            </div>";
+                "            </div>\n" +
+                "            <div class=\"col-md-4\">\n" +
+                "                <h1>12,59 zł</h1>\n" +
+                "                <h5>Ilość:</h5>\n" +
+                "                <form class=\"g-3\">\n" +
+                "                    <div class=\"input-group input-group-lg mb-3\">\n" +
+                "                        <input type=\"text\" class=\"form-control\" aria-label=\"Ilość\" aria-describedby=\"inputGroup-sizing-lg\" value=\"1\" style=\"max-width: 45px;\">\n" +
+                "                    </div>\n" +
+                "                    <div class=\"mt-4\">\n" +
+                "                        <button class=\"btn btn-success\" type=\"submit\">Dodaj do koszyka</button>\n" +
+                "                    </div>\n" +
+                "                </form>\n" +
+                "                <h2>Dostawa w ciągu 3 dni roboczych!</h2>\n" +
+                "                <h3>Koszt dostawy: 0 zł</h3>\n" +
+                "                <button type=\"button\" class=\"btn btn-light mt-3\">Zapytaj o produkt</button>\n" +
+                "            </div>\n" +
+                "        </div>\n" +
+                "    </div>";
     }
 
     public String getFooter(){
