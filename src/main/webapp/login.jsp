@@ -16,19 +16,19 @@
     <div class="card w-50 mx-auto mt-4 text-light" style="background-color: rgb(255 255 255 / 30%);">
         <div class="card-body">
             <h2 class="text-center">Zaloguj się!</h2>
-            <form method="POST" action="index.jsp">
+            <form method="POST" action="<%= request.getContextPath() %>/loginAuth">
                 <div class="mb-3">
-                    <label for="mail" class="form-label">Adres e-mail:</label>
-                    <input type="email" class="form-control" id="mail" placeholder="adres@email.pl" required>
+                    <label for="email" class="form-label">Adres e-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="adres@email.pl" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Hasło:</label>
                     <input type="password" class="form-control" id="password">
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="rememberme">
-                    <label class="form-check-label" for="rememberme">Zapamiętaj mnie</label>
-                </div>
+<%--                <div class="mb-3 form-check">--%>
+<%--                    <input type="checkbox" class="form-check-input" id="rememberme">--%>
+<%--                    <label class="form-check-label" for="rememberme">Zapamiętaj mnie</label>--%>
+<%--                </div>--%>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="submit" class="btn btn-success float-right">Zaloguj</button>
                 </div>

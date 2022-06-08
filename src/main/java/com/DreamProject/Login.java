@@ -1,10 +1,10 @@
 package com.DreamProject;
 
 public class Login {
-    private String name;
-    private String surname;
-    private String email;
-    private String password;
+    protected String name;
+    protected String surname;
+    protected String email;
+    protected String password;
 
     public Login(String firstname, String surname, String email, String password) {
         this.name=firstname;
@@ -12,6 +12,14 @@ public class Login {
         this.email=email;
         this.password=password;
     }
+
+    public Login(String firstname, String surname, String email) {
+        this.name=firstname;
+        this.surname=surname;
+        this.email=email;
+    }
+
+    public Login(){}
 
     public String getEmail() {
         return email;
@@ -45,7 +53,7 @@ public class Login {
         }
     }
 
-    public void setSurname() {
-        this.surname = surname;
+    public void setSurname(String surname) {
+        this.surname = this.surname;
     }
 }

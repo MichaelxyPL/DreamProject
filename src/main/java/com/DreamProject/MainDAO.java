@@ -55,32 +55,6 @@ public class MainDAO {
         }
     }
 
-    /**
-     * Pobranie danych o użytkowniku w procesie logowania
-     * @param user obiekt w którym będą trzymane informacje
-     * @return int status autoryzacji logowania [1:udało się, 0:nie udało się, -1:brak połączenia z bazą]
-     */
-    public int setUser(User user, String login, String pswrd) {
-        try {
-            this.setConnect();
-            parser = new SQLParser();
-
-            ResultSet result = statement.executeQuery(parser.getUser(login, pswrd));
-            if(result.next()) {
-                user.setId(result.getInt("id"));
-                user.setName(result.getString("name"));
-                user.setSecondName(result.getString("secondname"));
-                this.closeConnect();
-                return 1;
-            }else{
-                return 0;
-            }
-        } catch (ClassNotFoundException | SQLException e) {
-//            e.printStackTrace();
-            return -1;
-        }
-    }
-
     public String geUsers() {
         String users="";
         try {
@@ -108,7 +82,7 @@ public class MainDAO {
 
         try {
             this.setConnect();
-            ResultSet result = statement.executeQuery("SELECT id,name, price FROM tbproducts");
+            ResultSet result = statement.executeQuery("SELECT id,name, price, type, img FROM tbproducts");
 
             if(result.next()){
                 books.add(new Book(result.getString("name"),""+result.getFloat("price")));
@@ -143,6 +117,67 @@ public class MainDAO {
         }finally{
             this.closeConnect();
         }
+    }
+
+    public Login loginUser(Login login) {
+        String hashedPassword=this.getHashDB(login.getEmail());
+
+        BCrypt crypt=new BCrypt();
+        if(crypt.checkpw(login.getPassword(), hashedPassword)){
+            login=this.getUserData(login);
+        }
+        login=this.getUserData(login);
+
+        System.out.println("name in login obj: "+login.getName());
+
+        return login;
+    }
+
+    private Login getUserData(Login login) {
+        try {
+            this.setConnect();
+            String email=login.getEmail();
+            String query="SELECT name, surname  FROM tbusers WHERE email='"+email+"'";
+            System.out.println("query: "+query);
+            ResultSet result=statement.executeQuery(query);
+
+            if(result.next()){
+                System.out.println("email in obj: "+login.getEmail());
+                System.out.println("name in db: "+result.getString("name"));
+                login.setName(result.getString("name"));
+                login.setSurname(result.getString("surname"));
+            }
+        } catch (Exception e) {
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
+        }finally{
+            this.closeConnect();
+        }
+
+        return login;
+    }
+
+    private String getHashDB(String email) {
+        String password="";
+
+        try {
+            this.setConnect();
+
+            stmt = this.connection.prepareStatement("SELECT password AS password FROM tbusers WHERE email=?");
+            stmt.setString(1, email);
+            ResultSet result=stmt.executeQuery();
+
+            if(result.next()){
+                password=result.getString("password");
+            }
+        } catch (Exception e) {
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
+        }finally{
+            this.closeConnect();
+        }
+
+        System.out.println("password: "+password);
+
+        return password;
     }
 
     /**
