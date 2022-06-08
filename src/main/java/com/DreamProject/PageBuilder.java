@@ -4,23 +4,51 @@ import java.util.List;
 
 public class PageBuilder {
     public String makeHeader(){
-        return "<div class=\"container-fluid\">\n" +
-                "    <div class=\"row align-items-center py-3 px-xl-5\">\n" +
-                "        <div class=\"col-lg-3 d-none d-lg-block\"><a class=\"text-decoration-none\">\n" +
-                "            <h1 class=\"m-0 display-5 font-weight-semi-bold\"><span class=\"text-light font-weight-bold border-0 px-3 mr-1\">Księgarnia</span></h1>\n" +
-                "        </a></div>\n" +
-                "        <div class=\"col-lg-6 col-6 text-left\">\n" +
-                "            <form action=\"#\" method=\"post\">\n" +
-                "                <div class=\"input-group\">\n" +
-                "                    <input type=\"text\" class=\"form-control\" placeholder=\"Search for products\">\n" +
-                "                    <div class=\"input-group-append\"><span class=\"input-group-text bg-transparent text-primary\"><i class=\"fa fa-search\"></i></span></div>\n" +
-                "                </div>\n" +
-                "            </form>\n" +
+        return "    <nav class=\"navbar navbar-expand-lg navbar-light\" style=\"background-color: rgb(255 255 255 / 30%);\">\n" +
+                "        <div class=\"container \">\n" +
+                "            <a class=\"navbar-brand font-weight-bold text-white h1\" href=\"#\">Księgarnia \"Dla Wybranych\"</a>\n" +
+                "            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
+                "                <span class=\"navbar-toggler-icon\"></span>\n" +
+                "            </button>\n" +
+                "            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n" +
+                "                <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n" +
+                "                    <li class=\"nav-item\">\n" +
+                "                        <a class=\"nav-link active h5\" aria-current=\"page\" href=\"#\">Strona Główna</a>\n" +
+                "                    </li>\n" +
+                "                    <li class=\"nav-item dropdown\">\n" +
+                "                        <a class=\"nav-link dropdown-toggle h5\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n" +
+                "                            Produkty\n" +
+                "                        </a>\n" +
+                "                        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #5d0569;\">\n" +
+                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"books.jsp\">Książki</a></li>\n" +
+                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"audiobooks.jsp\">Audiobook</a></li>\n" +
+                "                        </ul>\n" +
+                "                    </li>\n" +
+                "                    <li class=\"nav-item h5\">\n" +
+                "                        <a class=\"nav-link\" href=\"login.jsp\">Logowanie</a>\n" +
+                "                    </li>\n" +
+                "                    <li class=\"nav-item h5\">\n" +
+                "                        <a class=\"nav-link\" href=\"register.jsp\">Rejestracja</a>\n" +
+                "                    </li>\n" +
+                "                </ul>\n" +
+                "                <form class=\"d-flex me-3\">\n" +
+                "                    <input class=\"form-control me-2\" type=\"search\" placeholder=\"Wyszukiwarka\" aria-label=\"Search\">\n" +
+                "                    <button class=\"btn btn-success\" type=\"submit\">Wyszukaj</button>\n" +
+                "                </form>\n" +
+                "                <form class=\"d-flex\">\n" +
+                "                    <button type=\"button\" class=\"btn btn-primary\">\n" +
+                "                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\" class=\"bi bi-cart\" viewBox=\"0 0 16 16\">\n" +
+                "                            <path d=\"M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z\"></path>\n" +
+                "                        </svg>\n" +
+                "                        Koszyk\n" +
+                "                    </button>\n" +
+                "                </form>\n" +
+                "\n" +
+                "            </div>\n" +
                 "        </div>\n" +
-                "        <div class=\"col-lg-3 col-6 text-right\"> <a class=\"btn border\" href=\"cart.jsp\"><i class=\"fa fa-shopping-cart text-primary\"></i> <span class=\"badge\">0</span></a></div>\n" +
-                "    </div>\n" +
-                "</div>"+
-                this.makeCategoryHeader();
+                "\n" +
+                "    </nav>";
+               // this.makeCategoryHeader();
     }
 
     public String makeCategoryHeader(){
@@ -91,50 +119,89 @@ public class PageBuilder {
     }
 
     public String getFooter(){
-        return "<div class=\"container-fluid bg-secondary text-dark mt-5 pt-5\">\n" +
-                "      <div class=\"row px-xl-5 pt-5\">\n" +
-                "        <div class=\"col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5\"><a class=\"text-decoration-none\">\n" +
-                "          <h1 class=\"mb-4 display-5 font-weight-semi-bold\"><span class=\"text-primary font-weight-bold border border-white px-3 mr-1\">Księgarnia</span>Zajebista</h1>\n" +
-                "          </a>\n" +
-                "          <p>Bo kochamy książki. I wasze pieniądze &lt;3</p>\n" +
-                "          <p class=\"mb-2\"><i class=\"fa fa-map-marker-alt text-primary mr-3\"></i>Kwiatowa 2137, Warszawa</p>\n" +
-                "          \n" +
-                "          \n" +
-                "        </div>\n" +
-                "        <div class=\"col-lg-8 col-md-12\">\n" +
-                "          <div class=\"row\">\n" +
-                "            <div class=\"col-md-4 mb-5\">\n" +
-                "              <h5 class=\"font-weight-bold text-dark mb-4\">Na skróty</h5>\n" +
-                "              <div class=\"d-flex flex-column justify-content-start\"><a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Home</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Our Shop</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shop Detail</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shopping Cart</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Checkout</a> <a class=\"text-dark\" ><i class=\"fa fa-angle-right mr-2\"></i>Contact Us</a></div>\n" +
+        return  "<section class=\"d-flex justify-content-center justify-content-lg-between p-4 border-bottom container\">\n" +
+                "            <div class=\"me-5 d-none d-lg-block\">\n" +
+                "                <span>Znajdź nas w sieci:</span>\n" +
                 "            </div>\n" +
-                "            <div class=\"col-md-4 mb-5\">\n" +
-                "              <h5 class=\"font-weight-bold text-dark mb-4\">Quick Links</h5>\n" +
-                "              <div class=\"d-flex flex-column justify-content-start\"><a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Home</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Our Shop</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shop Detail</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Shopping Cart</a> <a class=\"text-dark mb-2\" ><i class=\"fa fa-angle-right mr-2\"></i>Checkout</a> <a class=\"text-dark\" ><i class=\"fa fa-angle-right mr-2\"></i>Contact Us</a></div>\n" +
+                "            <div>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-facebook\"></i>\n" +
+                "                </a>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-twitter\"></i>\n" +
+                "                </a>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-google\"></i>\n" +
+                "                </a>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-instagram\"></i>\n" +
+                "                </a>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-linkedin\"></i>\n" +
+                "                </a>\n" +
+                "                <a href=\"\" class=\"me-4 text-reset\">\n" +
+                "                    <i class=\"bi bi-github\"></i>\n" +
+                "                </a>\n" +
                 "            </div>\n" +
-                "            <div class=\"col-md-4 mb-5\">\n" +
-                "              <h5 class=\"font-weight-bold text-dark mb-4\">Newsletter</h5>\n" +
-                "              <form action=\"#\" method=\"post\">\n" +
-                "                <div class=\"form-group\">\n" +
-                "                  <input type=\"text\" class=\"form-control border-0 py-4\" placeholder=\"Your Name\" required=\"\">\n" +
+                "        </section>\n" +
+                "        <section class=\"\">\n" +
+                "            <div class=\"container text-center text-md-start mt-5\">\n" +
+                "                <div class=\"row mt-3\">\n" +
+                "                    <div class=\"col-md-3 col-lg-4 col-xl-3 mx-auto mb-4\">\n" +
+                "                        <h6 class=\"text-uppercase fw-bold mb-4\">\n" +
+                "                            <i class=\"fas fa-gem me-3\"></i>Księgarnia \"Dla Wybranych\"\n" +
+                "                        </h6>\n" +
+                "                        <p>\n" +
+                "                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in fringilla purus, et pretium ante. Ut consequat ante quis mollis maximus. Mauris vitae nibh non neque varius interdum vel accumsan ipsum.\n" +
+                "                        </p>\n" +
+                "                    </div>\n" +
+                "\n" +
+                "                    <div class=\"col-md-2 col-lg-2 col-xl-2 mx-auto mb-4\">\n" +
+                "                        <h6 class=\"text-uppercase fw-bold mb-4\">\n" +
+                "                            Produkty\n" +
+                "                        </h6>\n" +
+                "                        <p>\n" +
+                "                            <a href=\"books.jsp\" class=\"text-reset\">Książki</a>\n" +
+                "                        </p>\n" +
+                "                        <p>\n" +
+                "                            <a href=\"audiobooks.jsp\" class=\"text-reset\">Audiobooki</a>\n" +
+                "                        </p>\n" +
+                "                    </div>\n" +
+                "\n" +
+                "                    <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4\">\n" +
+                "                        <h6 class=\"text-uppercase fw-bold mb-4\">\n" +
+                "                            Przydatne linki\n" +
+                "                        </h6>\n" +
+                "                        <p>\n" +
+                "                            <a href=\"index.jsp\" class=\"text-reset\">Strona Główna</a>\n" +
+                "                        </p>\n" +
+                "                        <p>\n" +
+                "                            <a href=\"login.jsp\" class=\"text-reset\">Logowanie</a>\n" +
+                "                        </p>\n" +
+                "                        <p>\n" +
+                "                            <a href=\"register.jsp\" class=\"text-reset\">Rejestracja</a>\n" +
+                "                        </p>\n" +
+                "\n" +
+                "                    </div>\n" +
+                "                    <div class=\"col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4\">\n" +
+                "                        <h6 class=\"text-uppercase fw-bold mb-4\">\n" +
+                "                            Kontakt\n" +
+                "                        </h6>\n" +
+                "                        <p><i class=\"fas fa-home me-3\"></i>Łabiszyńska 25, 03-204 Warszawa</p>\n" +
+                "                        <p>\n" +
+                "                            <i class=\"fas fa-envelope me-3\"></i>\n" +
+                "                            ksiegarnia@dlaWybranych.pl\n" +
+                "                        </p>\n" +
+                "                        <p><i class=\"fas fa-phone me-3\"></i> +48 234 567 88</p>\n" +
+                "                        <p><i class=\"fas fa-print me-3\"></i> +48 234 567 89</p>\n" +
+                "                    </div>\n" +
                 "                </div>\n" +
-                "                <div class=\"form-group\">\n" +
-                "                  <input type=\"email\" class=\"form-control border-0 py-4\" placeholder=\"Your Email\" required=\"\">\n" +
-                "                </div>\n" +
-                "                <div>\n" +
-                "                  <button class=\"btn btn-primary btn-block border-0 py-3\" type=\"submit\">Subscribe Now</button>\n" +
-                "                </div>\n" +
-                "              </form>\n" +
                 "            </div>\n" +
-                "          </div>\n" +
-                "        </div>\n" +
-                "      </div>\n" +
-                "      <div class=\"row border-top border-light mx-xl-5 py-4\">\n" +
-                "        <div class=\"col-md-6 px-xl-0\">\n" +
-                "          <p class=\"mb-md-0 text-center text-md-left text-dark\">© <a class=\"text-dark font-weight-semi-bold\" >WSB Warszawa</a>. All Rights Reserved. Designed by <a class=\"text-dark font-weight-semi-bold\" target=\"_blank\" rel=\"nofollow noopener\" >Dawid Kwietniewski, Krzysztof Sepski, Michał Szerzeń, Katarzyna Walczak</a></p>\n" +
-                "        </div>\n" +
-                "        <div class=\"col-md-6 px-xl-0 text-center text-md-right\"><img class=\"img-fluid\" src=\"assets/img/payments.png\" alt=\"website template image\"></div>\n" +
-                "      </div>\n" +
-                "    </div>";
+                "        </section>\n" +
+                "        <div class=\"text-center p-4\" style=\"background-color: rgba(0, 0, 0, 0.05);\">\n" +
+                "            <p>© 2022 Copyright:</p>\n" +
+                "            <a class=\"text-reset fw-bold\" href=\"#\">Dawid Kwietniewski, Krzysztof Sepski, Michał Szerzeń, Katarzyna Walczak</a>\n" +
+                "        </div>\n";
     }
 
     public String showProducts() {
