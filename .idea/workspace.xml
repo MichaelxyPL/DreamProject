@@ -9,14 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="new login.jsp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/Audiobook.java" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Front-end składania zamówienia i template successOrder.jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/books.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/PageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/PageBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/successOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/successOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/WEB-INF/classes/com/DreamProject/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/MainDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/PageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DreamProject/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -63,12 +66,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dawid Kwietniewski\IdeaProjects\DreamProject\src\main\webapp" />
@@ -209,6 +211,7 @@
       <workItem from="1654620618482" duration="612000" />
       <workItem from="1654628499234" duration="696000" />
       <workItem from="1654714038156" duration="2749000" />
+      <workItem from="1654717941583" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -359,7 +362,8 @@
     <MESSAGE value="Porządkowanie plików" />
     <MESSAGE value="New index.jsp" />
     <MESSAGE value="new login.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="new login.jsp" />
+    <MESSAGE value="Front-end składania zamówienia i template successOrder.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front-end składania zamówienia i template successOrder.jsp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
