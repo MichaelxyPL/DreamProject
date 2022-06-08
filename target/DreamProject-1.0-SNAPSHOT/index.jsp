@@ -23,9 +23,9 @@
 <body style="background-color: #5d0569;">
 
 <%
-//    if(!user.isLogged() && login.getName()!=null){
+    if(!user.isLogged() && login.getName()!=null){
         user.validate(login);
-//    }
+    }
 %>
 
 <%= builder.makeHeader() %>

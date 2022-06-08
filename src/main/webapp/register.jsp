@@ -17,26 +17,26 @@
     <div class="card w-50 mx-auto mt-4 text-light" style="background-color: rgb(255 255 255 / 30%);">
         <div class="card-body">
             <h2 class="text-center">Zarejestruj się!</h2>
-            <form method="POST" action="index.jsp">
+            <form method="POST" action="<%= request.getContextPath() %>/register">
                 <div class="mb-3">
                     <label for="name" class="form-label">Imię:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Imię" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Imię" required>
                 </div>
                 <div class="mb-3">
-                    <label for="forname" class="form-label">Nazwisko:</label>
-                    <input type="text" class="form-control" id="forname" placeholder="Nazwisko" required>
+                    <label for="surname" class="form-label">Nazwisko:</label>
+                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko" required>
                 </div>
                 <div class="mb-3">
                     <label for="mail" class="form-label">Adres e-mail:</label>
-                    <input type="email" class="form-control" id="mail" placeholder="adres@email.pl" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="adres@email.pl" required>
                     <div id="emailHelp" class="form-text text-white">Nie udostępnimy twojego adresu e-mail nikomu więcej.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Hasło:</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" name="password" id="password">
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="privacypolicy" required>
+                    <input type="checkbox" class="form-check-input" name="privacypolicy" id="privacypolicy" required>
                     <label class="form-check-label" for="privacypolicy">Zapoznałem się z zasadami prywatności</label>
                 </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">

@@ -33,11 +33,7 @@ public class User {
     }
 
     public void validate(Login login) {
-        MainDAO db = new MainDAO();
-        if(login.getName()!=""){
-            db.addUser(login.getName(),login.getEmail(),login.getPassword());
-        }
-
+        System.out.println("Rozpoczecie procesu sprawdzania czy");
     }
 }
 
