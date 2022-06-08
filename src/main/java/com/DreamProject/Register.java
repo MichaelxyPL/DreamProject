@@ -30,7 +30,7 @@ public class Register  extends HttpServlet {
         MainDAO db = new MainDAO();
         db.addUser(login);
 
-        RequestDispatcher dispatcher=request.getRequestDispatcher("index2.jsp");
+        RequestDispatcher dispatcher=request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request,response);
     }
 }
