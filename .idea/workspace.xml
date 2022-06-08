@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawa odnośników">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/books.jsp" afterDir="false" />
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Poprawa stopki (sticky)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/audiobooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/audiobooks.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,6 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -203,7 +204,7 @@
       <workItem from="1654620618482" duration="612000" />
       <workItem from="1654628499234" duration="696000" />
       <workItem from="1654714038156" duration="2749000" />
-      <workItem from="1654717941583" duration="2211000" />
+      <workItem from="1654717941583" duration="2959000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -317,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654719765256</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Poprawa stopki (sticky)">
+      <created>1654720250316</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654720250316</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +379,8 @@
     <MESSAGE value="Front-end składania zamówienia i template successOrder.jsp" />
     <MESSAGE value="Front-end zaakceptowanego zamówienia" />
     <MESSAGE value="Poprawa odnośników" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawa odnośników" />
+    <MESSAGE value="Poprawa stopki (sticky)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawa stopki (sticky)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

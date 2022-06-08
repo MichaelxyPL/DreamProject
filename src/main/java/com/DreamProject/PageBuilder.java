@@ -133,12 +133,13 @@ public class PageBuilder {
                 "                        <input type=\"text\" class=\"form-control\" aria-label=\"Ilość\" aria-describedby=\"inputGroup-sizing-lg\" value=\"1\" style=\"max-width: 45px;\">\n" +
                 "                    </div>\n" +
                 "                    <div class=\"mt-4\">\n" +
-                "                        <button class=\"btn btn-success\" type=\"submit\">Dodaj do koszyka</button>\n" +
+                "                        <button type=\"button\" class=\"btn btn-success\" data-bs-toggle=\"modal\" data-bs-target=\"#order\">\n" +
+                "                           Dodaj do koszyka\n" +
+                "                        </button>\n" +
                 "                    </div>\n" +
                 "                </form>\n" +
                 "                <h2>Dostawa w ciągu 3 dni roboczych!</h2>\n" +
                 "                <h3>Koszt dostawy: 0 zł</h3>\n" +
-                "                <button type=\"button\" class=\"btn btn-light mt-3\">Zapytaj o produkt</button>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "    </div>";
