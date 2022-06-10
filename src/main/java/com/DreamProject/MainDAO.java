@@ -85,6 +85,7 @@ public class MainDAO {
             ResultSet result = statement.executeQuery("SELECT id, name, price, type, author FROM tbproducts");
 
             while(result.next()){
+                System.out.println(result.getString("type"));
                 books.add(new Book(
                         result.getInt("id"),
                         result.getString("name"),
