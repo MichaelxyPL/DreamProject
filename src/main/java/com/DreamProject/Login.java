@@ -1,6 +1,7 @@
 package com.DreamProject;
 
 public class Login {
+    private static Login instance;
     protected String name;
     protected String surname;
     protected String email;
@@ -26,17 +27,19 @@ public class Login {
 
 
 
-    public Login(String firstname, String surname, String email, String password) {
+    private Login(String firstname, String surname, String email, String password) {
         this.name=firstname;
         this.surname=surname;
         this.email=email;
         this.password=password;
     }
 
-    public Login(String firstname, String surname, String email) {
-        this.name=firstname;
-        this.surname=surname;
-        this.email=email;
+    /*WZORZEC SINGLETON*/
+    public static Login getInstance(String firstname, String surname, String email, String password) {
+        if (instance == null) {
+            instance = new Login(firstname, surname, email, password);
+        }
+        return instance;
     }
 
     public Login(){}
@@ -74,6 +77,6 @@ public class Login {
     }
 
     public void setSurname(String surname) {
-        this.surname = this.surname;
+        this.surname = surname;
     }
 }

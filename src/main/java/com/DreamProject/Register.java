@@ -15,7 +15,7 @@ import java.util.Enumeration;
 public class Register  extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Login login=new Login(
+        Login login=Login.getInstance(
             request.getParameter("name"),
             request.getParameter("surname"),
             request.getParameter("email"),
