@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="user" class="com.DreamProject.User"
-             scope="page"></jsp:useBean>
+<jsp:useBean id="login" class="com.DreamProject.Login"
+             scope="session"></jsp:useBean>
 <jsp:useBean id="builder" class="com.DreamProject.PageBuilder"
              scope="page"></jsp:useBean>
 <html>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Hasło:</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
 <%--                <div class="mb-3 form-check">--%>
 <%--                    <input type="checkbox" class="form-check-input" id="rememberme">--%>

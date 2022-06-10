@@ -22,13 +22,10 @@ public class Register  extends HttpServlet {
             request.getParameter("password")
         );
 
-        //TODO Test zapisu objektu w sesji jako zalogowany user
-        /*User user = new User();
-        user.setName("dupa");
-        request.getSession().setAttribute("user", user);*/
-
         MainDAO db = new MainDAO();
         db.addUser(login);
+
+        request.getSession().setAttribute("login", login);
 
         RequestDispatcher dispatcher=request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request,response);

@@ -107,7 +107,8 @@ public class PageBuilder {
     }
 
     private String showProduct(Book book){
-        return "    <div class=\"container text-white\" style=\"background-color: #5d0569;\">\n" +
+        return "<div class=\"u-layout-row\">\n" +
+                "                <div class=\"container text-white\" style=\"background-color: #5d0569;\">\n" +
                 "        <div class=\"row pt-4 mb-4\">\n" +
                 "            <div class=\"col-md-8 pt-3 rounded\" style=\"background-color: rgb(255 255 255 / 30%);\">\n" +
                 "                <div class=\"card bg-transparent border-0\">\n" +
@@ -117,8 +118,8 @@ public class PageBuilder {
                 "                        </div>\n" +
                 "                        <div class=\"col-md-8\">\n" +
                 "                            <div class=\"card-body\">\n" +
-                "                                <h1 class=\"card-title\">Kod Leonarda da Vinci</h1>\n" +
-                "                                <p class=\"card-text\">Autor: Dan Brown</p>\n" +
+                "                                <h1 class=\"card-title\">"+book.getName()+"</h1>\n" +
+                "                                <p class=\"card-text\">Autor: "+book.getAuthor()+"</p>\n" +
                 "                                <p class=\"card-text\">Donec nec finibus purus, quis varius turpis. Phasellus sollicitudin in turpis eu blandit. Pellentesque justo ipsum, maximus et magna a, lacinia fringilla metus. Fusce pulvinar lacus quam, ac venenatis elit egestas non. Curabitur eu placerat lorem, vulputate maximus odio. Proin viverra nibh eros, sed rhoncus ligula consectetur ac. Nunc rhoncus justo tellus, sit amet scelerisque elit lacinia eu. Phasellus sed ex nec ligula aliquet condimentum sed sit amet nisi. Integer at nunc pulvinar, ultrices orci in, vulputate diam. Aliquam tempus, mauris ac auctor molestie, odio nibh finibus metus, quis venenatis tellus leo at lacus.</p>\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +
@@ -126,14 +127,10 @@ public class PageBuilder {
                 "                </div>\n" +
                 "            </div>\n" +
                 "            <div class=\"col-md-4\">\n" +
-                "                <h1>12,59 zł</h1>\n" +
-                "                <h5>Ilość:</h5>\n" +
+                "                <h1>"+book.getPrice()+" zł</h1>\n" +
                 "                <form class=\"g-3\">\n" +
-                "                    <div class=\"input-group input-group-lg mb-3\">\n" +
-                "                        <input type=\"text\" class=\"form-control\" aria-label=\"Ilość\" aria-describedby=\"inputGroup-sizing-lg\" value=\"1\" style=\"max-width: 45px;\">\n" +
-                "                    </div>\n" +
                 "                    <div class=\"mt-4\">\n" +
-                "                        <button type=\"button\" class=\"btn btn-success\" data-bs-toggle=\"modal\" data-bs-target=\"#order\">\n" +
+                "                        <button data-bookid="+book.getId()+" type=\"button\" class=\"btn btn-success btn-addtocart\" data-bs-toggle=\"modal\" data-bs-target=\"#order\">\n" +
                 "                           Dodaj do koszyka\n" +
                 "                        </button>\n" +
                 "                    </div>\n" +
@@ -142,7 +139,7 @@ public class PageBuilder {
                 "                <h3>Koszt dostawy: 0 zł</h3>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
-                "    </div>";
+                "    </div>\n";
     }
 
     public String getFooter(){
@@ -239,8 +236,98 @@ public class PageBuilder {
         for(Book book : books) {
             productSet+=this.showProduct(book);
         }
+        productSet+=this.formOrder("/DreamProject_war_exploded/addOrder");
 
         return productSet;
 //        return "aaaaaaaaa";
     }
+
+    public String getWelcome(Login login) {
+        if(login.checkIsLogged()){
+            return "Witaj, "+login.getName();
+        }else {
+            return "<li class=\"nav-item h5\">\n" +
+                    "                        <a class=\"nav-link\" href=\"login.jsp\">Logowanie</a>\n" +
+                    "                    </li>\n" +
+                    "                    <li class=\"nav-item h5\">\n" +
+                    "                        <a class=\"nav-link\" href=\"register.jsp\">Rejestracja</a>\n" +
+                    "                    </li>";
+        }
+    }
+
+    public String showError(Login login) {
+        if(login.checkIsFailed()){
+            return "<div style=\"width:15em;background: rgb(255 255 255 / 60%);\"><i class=\"bi bi-heartbreak\"></i> Spróbuj jeszcze raz</div>";
+        }
+        return "";
+    }
+
+    public String formOrder(String actionSrc) {
+        return  "<div class=\"modal fade\" id=\"order\" data-bs-backdrop=\"static\" data-bs-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"staticBackdropLabel\" aria-hidden=\"true\">\n" +
+                "    <div class=\"modal-dialog\">\n" +
+                "        <div class=\"modal-content\">\n" +
+                "            <div class=\"modal-header\">\n" +
+                "                <h4 class=\"modal-title text-center\">Zamówienie</h4>\n" +
+                "                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\"></button>\n" +
+                "            </div>\n" +
+                "            <form method=\"POST\" action=\"" + actionSrc + "\">\n" +
+                "                <div class=\"modal-body\">\n" +
+                "                    <div class=\"mb-3 mt-3\">\n" +
+                "                        <label for=\"address\" class=\"form-label\">Adres:</label>\n" +
+                "                        <input type=\"text\" class=\"form-control\" id=\"address\" placeholder=\"Wprowadź adres\" name=\"address\">\n" +
+                "                    </div>\n" +
+                "                    <div style=\"display:none\" class=\"mb-3 mt-3\">\n" +
+                "                        <label for=\"bookid\" class=\"form-label\">bookid:</label>\n" +
+                "                        <input type=\"text\" class=\"form-control\" id=\"bookid\" placeholder=\"bookid\" name=\"bookid\">\n" +
+                "                    </div>\n" +
+                "                    <div class=\"mb-3\">\n" +
+                "                        <label for=\"amount\" class=\"form-label\">Ilość:</label>\n" +
+                "                        <input type=\"number\" class=\"form-control\" id=\"amount\" name=\"amount\" min=\"1\" max=\"10\" style=\"max-width: 65px;\" value=\"1\">\n" +
+                "                    </div>\n" +
+                "                    <div class=\"mb-3\">\n" +
+                "                        <label for=\"delivery\" class=\"form-label\">Sposób dostawy:</label>\n" +
+                "                        <select class=\"form-select\" aria-label=\"Default select example\" id=\"delivery\">\n" +
+                "                            <option hidden>Wybierz sposób dostawy</option>\n" +
+                "                            <option value=\"1\">Pocztex</option>\n" +
+                "                            <option value=\"2\">InPost</option>\n" +
+                "                            <option value=\"3\">Krzysiek na rowerze</option>\n" +
+                "                        </select>\n" +
+                "                    </div>\n" +
+                "                </div>\n" +
+                "                <div class=\"modal-footer\">\n" +
+                "                    <button type=\"submit\" class=\"btn btn-success\" data-bs-dismiss=\"modal\">Zapłać</button>\n" +
+                "                </div>\n" +
+                "            </form>\n" +
+                "        </div>\n" +
+                "    </div>\n" +
+                "</div>";
+    }
+
+    public Object showOrderHistory(Login login) {
+        MainDAO db=new MainDAO();
+        List<Order> orders=db.getOrdersHistory(login);
+        String historySet = "";
+
+        for(Order order : orders) {
+            historySet+="<tr>\n" +
+                "            <td>"+order.getDate()+"</td>\n" +
+                "            <td>"+order.getProductID()+"<td>\n" +
+                "            <td>"+order.getAmount()+"</td>\n" +
+                "        </tr>";
+        }
+
+        return "<table class=\"mt-4 table table-light table-striped\">\n" +
+                "        <thead>\n" +
+                "        <tr>\n" +
+                "            <th scope=\"col\">Data zamówienia</th>\n" +
+                "            <th scope=\"col\">Produkt</th>\n" +
+                "            <th scope=\"col\">Ilość</th>\n" +
+                "        </tr>\n" +
+                "        </thead>\n" +
+                "        <tbody>\n" +
+                    historySet+
+                "        </tbody>\n" +
+                "    </table>";
+    }
 }
+

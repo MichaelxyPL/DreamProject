@@ -8,28 +8,26 @@ package com.DreamProject;
         import javax.servlet.http.HttpServlet;
         import javax.servlet.http.HttpServletRequest;
         import javax.servlet.http.HttpServletResponse;
+        import javax.servlet.http.HttpSession;
         import java.io.IOException;
         import java.util.Enumeration;
 
-@WebServlet("/loginAuth")
-public class LoginAuthorization extends HttpServlet {
+@WebServlet("/addOrder")
+public class OrderProcess extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Login login=new Login();
-        login.setEmail(request.getParameter("email"));
-        login.setPassword(request.getParameter("password"));
+        HttpSession session = request.getSession();
+        Login login = (Login)session.getAttribute("login");
+
+        if(!login.checkIsLogged()){
+            RequestDispatcher dispatcher=request.getRequestDispatcher("register.jsp");
+            dispatcher.forward(request,response);
+        }
 
         MainDAO db = new MainDAO();
-        login=db.loginUser(login);
+        db.addOrder(login, request.getParameter("bookid"),request.getParameter("amount"),request.getParameter("address"));
 
-        System.out.println(login.getName());
-
-
-        request.getSession().setAttribute("login", login);
-
-
-
-        RequestDispatcher dispatcher=request.getRequestDispatcher("index.jsp");
+        RequestDispatcher dispatcher=request.getRequestDispatcher("history.jsp");
         dispatcher.forward(request,response);
     }
 }

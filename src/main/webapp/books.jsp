@@ -34,7 +34,7 @@
     <div class="u-layout">
         <div class="u-layout-row">
             <%= builder.showProducts() %>
-            <%= order.newOrder() %>
+            <%= builder.formOrder(request.getContextPath()+"/addOrder") %>
         </div>
     </div>
 </div>

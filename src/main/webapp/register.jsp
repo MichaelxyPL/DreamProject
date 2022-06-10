@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko" required>
                 </div>
                 <div class="mb-3">
-                    <label for="mail" class="form-label">Adres e-mail:</label>
+                    <label for="email" class="form-label">Adres e-mail:</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="adres@email.pl" required>
                     <div id="emailHelp" class="form-text text-white">Nie udostępnimy twojego adresu e-mail nikomu więcej.</div>
                 </div>

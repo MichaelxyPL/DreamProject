@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="user" class="com.DreamProject.User"
-             scope="page"></jsp:useBean>
+<jsp:useBean id="login" class="com.DreamProject.Login"
+             scope="session"></jsp:useBean>
 <jsp:useBean id="builder" class="com.DreamProject.PageBuilder"
              scope="page"></jsp:useBean>
 <html>
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Księgarnia "Dla Wybranych"</title>
     <style>
@@ -30,7 +31,9 @@
 </head>
 <body style="background-color: #5d0569;">
 <%--Test działania zapisu objektu w sesji--%>
-Witaj <%= user.getName()%>
+
+<%= builder.showError(login)%>
+<div id="user-status" data-islogged="<%=login.checkIsLogged()%>"></div>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255 255 255 / 30%);">
         <div class="container ">
             <a class="navbar-brand font-weight-bold text-white h1" href="#">Księgarnia "Dla Wybranych"</a>
@@ -51,12 +54,7 @@ Witaj <%= user.getName()%>
                             <li><a class="dropdown-item text-white bg-hover" href="audiobooks.jsp">Audiobook</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item h5">
-                        <a class="nav-link" href="login.jsp">Logowanie</a>
-                    </li>
-                    <li class="nav-item h5">
-                        <a class="nav-link" href="register.jsp">Rejestracja</a>
-                    </li>
+                    <%=builder.getWelcome(login) %>
                 </ul>
                 <form class="d-flex me-3">
                     <input class="form-control me-2" type="search" placeholder="Wyszukiwarka" aria-label="Search">
@@ -114,9 +112,9 @@ Witaj <%= user.getName()%>
         </div>
     </div>
     <div class="container">
-<%--TODO        Treść strony--%>
+        <%=builder.showProducts() %>
     </div>
-    <footer class="text-center text-lg-start bg-pink text-white fixed-bottom">
+    <footer class="text-center text-lg-start bg-pink text-white bottom">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
             <div class="me-5 d-none d-lg-block">
                 <span>Znajdź nas w sieci:</span>
@@ -179,7 +177,6 @@ Witaj <%= user.getName()%>
                         <p>
                             <a href="register.jsp" class="text-reset">Rejestracja</a>
                         </p>
-
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">

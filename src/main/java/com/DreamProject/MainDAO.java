@@ -82,13 +82,19 @@ public class MainDAO {
 
         try {
             this.setConnect();
-            ResultSet result = statement.executeQuery("SELECT id,name, price, type, img FROM tbproducts");
+            ResultSet result = statement.executeQuery("SELECT id, name, price, type, author FROM tbproducts");
 
-            if(result.next()){
-                books.add(new Book(result.getString("name"),""+result.getFloat("price")));
+            while(result.next()){
+                books.add(new Book(
+                        result.getInt("id"),
+                        result.getString("name"),
+                        Float.toString(result.getFloat("price")),
+                        result.getString("type"),
+                        result.getString("author"))
+                );
             }
         } catch (Exception e) {
-//            System.out.println(e.getMessage());
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
         }finally{
             this.closeConnect();
         }
@@ -101,6 +107,11 @@ public class MainDAO {
 
         String salt=crypt.gensalt();
         String hashedPassword=crypt.hashpw(login.getPassword(), salt);
+
+        if(this.checkIsUserExist(login)){
+            login.setIsFailed(true);
+            return;
+        }
 
         try {
             this.setConnect();
@@ -119,16 +130,45 @@ public class MainDAO {
         }
     }
 
+    private boolean checkIsUserExist(Login login) {
+        try {
+            this.setConnect();
+            String email=login.getEmail();
+            String name=login.getName();
+            String query="SELECT true as checkExst FROM tbusers WHERE email='"+email+"' OR name='"+name+"'";
+            ResultSet result=statement.executeQuery(query);
+
+            System.out.println(query);
+
+            if(result.next()){
+                System.out.println(result.getBoolean("checkExst"));
+                return result.getBoolean("checkExst");
+            }
+        } catch (Exception e) {
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
+        }finally{
+            this.closeConnect();
+        }
+
+        return false;
+    }
+
     public Login loginUser(Login login) {
         String hashedPassword=this.getHashDB(login.getEmail());
 
         BCrypt crypt=new BCrypt();
         if(crypt.checkpw(login.getPassword(), hashedPassword)){
+            System.out.println("Hasla zgodne");
             login=this.getUserData(login);
+            login.setIsLogged(true);
+        }else{
+            System.out.println("Hasla NIEzgodne");
+            login.setIsFailed(true);
+            login.setIsLogged(false);
         }
-        login=this.getUserData(login);
 
         System.out.println("name in login obj: "+login.getName());
+        System.out.println("password in login obj: "+login.getPassword());
 
         return login;
     }
@@ -180,25 +220,48 @@ public class MainDAO {
         return password;
     }
 
-    /**
-     * update/insert
-     * @param query zapytanie sql
-     */
-    /*public void save(String query) {
+    public void addOrder(Login login, String id, String amount, String address) {
+        System.out.println(Integer.parseInt(id));
+        System.out.println(Integer.parseInt(amount));
+        System.out.println(login.getEmail());
+        System.out.println(address);
+        try {
+            this.setConnect();
+//            ResultSet result = statement.executeQuery("INSERT INTO tbusers (name, email, password, salt) VALUES ("+name+", "+email+", "+hashedPassword+", "+salt+")");
+            stmt = this.connection.prepareStatement("INSERT INTO tborders (productid, amount, usermail, adress) VALUES (?,?,?,?)");
+            stmt.setInt(1, Integer.parseInt(id));
+            stmt.setInt(2, Integer.parseInt(amount));
+            stmt.setString(3, login.getEmail());
+            stmt.setString(4, address);
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
+        }finally{
+            this.closeConnect();
+        }
+    }
+
+    public List<Order> getOrdersHistory(Login login) {
+        List<Order> orders = new LinkedList<>();
 
         try {
-            Class.forName(DBDRIVER);
-            connection = DriverManager.getConnection(DBURL, DBUSER, DBPASS);
-            statement = connection.createStatement();
-            statement.executeUpdate(query);
+            this.setConnect();
+            String query="SELECT tborders.orderdt as orderdt, tbproducts.name as name, tbproducts.price as price, tborders.amount as amount FROM tborders inner join tbproducts on tbproducts.id=tborders.productid WHERE tborders.usermail='"+ login.getEmail()+"'";
+            ResultSet result = statement.executeQuery(query);
 
-            //zwolnienie zasobów i zamknięcie połączenia
-            statement.close();
-            connection.close();
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
+            while(result.next()){
+                orders.add(new Order(
+                        result.getString("orderdt"),
+                        result.getString("name"),
+                        result.getInt("amount"))
+                );
+            }
+        } catch (Exception e) {
+            System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
+        }finally{
+            this.closeConnect();
         }
-    }*/
 
-
+        return orders;
+    }
 }

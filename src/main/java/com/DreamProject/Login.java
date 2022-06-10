@@ -5,6 +5,26 @@ public class Login {
     protected String surname;
     protected String email;
     protected String password;
+    protected Boolean isLogged=false;
+    protected Boolean isFailed=false;
+
+    public Boolean checkIsLogged() {
+        return isLogged;
+    }
+
+    public void setIsLogged(Boolean logged) {
+        isLogged = logged;
+    }
+
+    public Boolean checkIsFailed() {
+        return isFailed;
+    }
+
+    public void setIsFailed(Boolean failed) {
+        isFailed = failed;
+    }
+
+
 
     public Login(String firstname, String surname, String email, String password) {
         this.name=firstname;
