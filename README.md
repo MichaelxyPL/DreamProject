@@ -1,7 +1,7 @@
 # DreamProject
 Projekt zaliczeniowy w ramach laboratiorów uczelni WSB Warszawa
+
 Michał 11232, Krzysztof 11366, Katarzyna 11241, Dawid 11333
-Projekt zaliczenowy.
 
 Instrukcja uruchomienia aplikacji:
 
