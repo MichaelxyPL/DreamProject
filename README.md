@@ -40,3 +40,6 @@ Użyte oprogramowanie na licencjach zewnętrznych:
 1. BCrypt 0.2 by Damien Miller - MIT license
 2. Bootstrap 1.3.0 - MIT license
 3. Jquery 3.6.0 - MIT license
+
+Licencja:
+1. Nie wyrażamy zgody na kopiowanie i jakiekolwiek używanie kodu, struktury czy jakiejkolwiek części tego proejktu bez pisemnej zgody wszystkich współtwórców.
