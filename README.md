@@ -7,3 +7,4 @@ Instrukcja uruchomienia aplikacji:
 2. Bazę danych z katalogu DreamProject/.sql/ uruchomić
 3. Uruchomić Apache Tomcat.
 4. Strona będzie dostępna pod adresem http://localhost:"skonfigurowany port w Apache Tomcat"/DreamProject-1.0-SNAPSHOT/
+   NP. http://localhost:8080/DreamProject-1.0-SNAPSHOT/
