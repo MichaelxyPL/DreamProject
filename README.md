@@ -42,4 +42,5 @@ Użyte oprogramowanie na licencjach zewnętrznych:
 3. Jquery 3.6.0 - MIT license
 
 Licencja:
-1. Nie wyrażamy zgody na kopiowanie i jakiekolwiek używanie kodu, struktury czy jakiejkolwiek części tego proejktu bez pisemnej zgody wszystkich współtwórców.
+1. Nie wyrażamy zgody na kopiowanie i jakiekolwiek używanie kodu, struktury czy jakiejkolwiek części tego projektu bez pisemnej zgody wszystkich współtwórców.
+2. Powyższa klauzula nie dotyczy pracowników i całej organizacji WSB
