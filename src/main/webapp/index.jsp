@@ -50,8 +50,8 @@
                             Produkty
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #5d0569;">
-                            <li><a class="dropdown-item text-white bg-hover" href="books.jsp">Książki</a></li>
-                            <li><a class="dropdown-item text-white bg-hover" href="audiobooks.jsp">Audiobook</a></li>
+                            <li><a class="dropdown-item text-white bg-hover" href="index.jsp">Książki</a></li>
+                            <li><a class="dropdown-item text-white bg-hover" href="index.jsp">Audiobook</a></li>
                         </ul>
                     </li>
                     <%=builder.getWelcome(login) %>
@@ -157,10 +157,10 @@
                             Produkty
                         </h6>
                         <p>
-                            <a href="books.jsp" class="text-reset">Książki</a>
+                            <a href="#" class="text-reset">Książki</a>
                         </p>
                         <p>
-                            <a href="audiobooks.jsp" class="text-reset">Audiobooki</a>
+                            <a href="#" class="text-reset">Audiobooki</a>
                         </p>
                     </div>
 

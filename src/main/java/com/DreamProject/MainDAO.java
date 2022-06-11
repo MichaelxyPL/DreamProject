@@ -157,6 +157,12 @@ public class MainDAO {
     public Login loginUser(Login login) {
         String hashedPassword=this.getHashDB(login.getEmail());
 
+        if(hashedPassword==""){
+            login.setIsFailed(true);
+            login.setIsLogged(false);
+            return login;
+        }
+
         BCrypt crypt=new BCrypt();
         if(crypt.checkpw(login.getPassword(), hashedPassword)){
             System.out.println("Hasla zgodne");

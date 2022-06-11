@@ -24,8 +24,8 @@ public class PageBuilder {
                 "                            Produkty\n" +
                 "                        </a>\n" +
                 "                        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style=\"background-color: #5d0569;\">\n" +
-                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"books.jsp\">Książki</a></li>\n" +
-                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"audiobooks.jsp\">Audiobook</a></li>\n" +
+                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"index.jsp\">Książki</a></li>\n" +
+                "                            <li><a class=\"dropdown-item text-white bg-hover\" href=\"index.jsp\">Audiobook</a></li>\n" +
                 "                        </ul>\n" +
                 "                    </li>\n" +
                 "                    <li class=\"nav-item h5\">\n" +
@@ -62,9 +62,9 @@ public class PageBuilder {
                 "      <h1 class=\"m-0\">Kategorie</h1></a>\n" +
                 "      <nav class=\"collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0\" id=\"navbar-vertical\">\n" +
                 "        <div class=\"navbar-nav w-100 overflow-hidden\">\n" +
-                "          <div class=\"nav-item dropdown\"><a class=\"nav-link\" data-toggle=\"dropdown\" href=\"books.jsp\">Książki </a>\n" +
+                "          <div class=\"nav-item dropdown\"><a class=\"nav-link\" data-toggle=\"dropdown\" href=\"index.jsp\">Książki </a>\n" +
                 "          </div>\n" +
-                "          <a class=\"nav-item nav-link\" href=\"audiobooks.jsp\">Audiobook</a></div>\n" +
+                "          <a class=\"nav-item nav-link\" href=\"index.jsp\">Audiobook</a></div>\n" +
                 "      </nav>\n" +
                 "    </div>\n" +
                 "    <div class=\"col-lg-9\">\n" +
@@ -153,10 +153,10 @@ public class PageBuilder {
                 "                            Produkty\n" +
                 "                        </h6>\n" +
                 "                        <p>\n" +
-                "                            <a href=\"books.jsp\" class=\"text-reset\">Książki</a>\n" +
+                "                            <a href=\"index.jsp\" class=\"text-reset\">Książki</a>\n" +
                 "                        </p>\n" +
                 "                        <p>\n" +
-                "                            <a href=\"audiobooks.jsp\" class=\"text-reset\">Audiobooki</a>\n" +
+                "                            <a href=\"index.jsp\" class=\"text-reset\">Audiobooki</a>\n" +
                 "                        </p>\n" +
                 "                    </div>\n" +
                 "\n" +

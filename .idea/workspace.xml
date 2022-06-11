@@ -9,9 +9,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Final build">
+    <list default="true" id="b0dbcde1-2cac-4a61-93a4-e4d1a84577e1" name="Changes" comment="Wzorczec Singleton">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_1_2022_10_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_1_2022_10_05_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DreamProject-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sql/dreamproject.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.sql/dreamproject.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/Audiobook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/Discounts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/MainDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/MainDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DreamProject/PageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DreamProject/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/audiobooks.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/books.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/orders.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pracownik.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/preview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/productAudiobook.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/productBook.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/productTemplate.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/successOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/testBazy.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,24 +47,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="HTTP Request" />
+        <option value="JUnit5 Test Class" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="main" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -58,25 +73,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dawid Kwietniewski\IdeaProjects\DreamProject\src\main\webapp" />
-      <recent name="C:\Users\Dawid Kwietniewski\IdeaProjects\DreamProject\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\kmwal\DreamProject\src\main\webapp" />
       <recent name="C:\Users\ksepski2\IdeaProjects\DreamProject\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dawid Kwietniewski\IdeaProjects\DreamProject\src\main\webapp" />
+      <recent name="C:\Users\micha\Desktop\nauka\DreamProjct\Dream\src\main\java\com\DreamProject" />
       <recent name="C:\Users\ksepski2\IdeaProjects\DreamProject\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.DreamProject" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.78">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:80/api/item" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="id=99&amp;content=new-element" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.107">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -88,10 +128,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="order2.jsp" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:8080/DreamProject_war_exploded/order2.jsp">
+    <configuration name="All in register" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/java/com/DreamProject/register.http">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 7.0.107" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.107" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="DreamProject:war exploded">
@@ -178,6 +218,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.All in register" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.107" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in register" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,12 +249,13 @@
       <workItem from="1654165417377" duration="1688000" />
       <workItem from="1654183805188" duration="1308000" />
       <workItem from="1654540513521" duration="5630000" />
-      <workItem from="1654591430966" duration="10195000" />
-      <workItem from="1654620618482" duration="612000" />
-      <workItem from="1654628499234" duration="696000" />
-      <workItem from="1654714038156" duration="2749000" />
-      <workItem from="1654717941583" duration="2959000" />
-      <workItem from="1654937482978" duration="417000" />
+      <workItem from="1654714194725" duration="9129000" />
+      <workItem from="1654805138666" duration="5008000" />
+      <workItem from="1654878735719" duration="91000" />
+      <workItem from="1654883864536" duration="10981000" />
+      <workItem from="1654895650951" duration="5451000" />
+      <workItem from="1654934032069" duration="1455000" />
+      <workItem from="1654938261747" duration="2190000" />
     </task>
     <task id="LOCAL-00001" summary="Poprawienie struktury paczek">
       <created>1654162486505</created>
@@ -249,91 +299,42 @@
       <option name="project" value="LOCAL" />
       <updated>1654543274945</updated>
     </task>
-    <task id="LOCAL-00007" summary="Start tamplate order.jsp">
-      <created>1654546787649</created>
+    <task id="LOCAL-00007" summary="Dodanie logiki rejestracji do bazy wraz z serwletem">
+      <created>1654636880094</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1654546787649</updated>
+      <updated>1654636880094</updated>
     </task>
-    <task id="LOCAL-00008" summary="Front-End zamówienia książki">
-      <created>1654596040553</created>
+    <task id="LOCAL-00008" summary="Dodanie logowania">
+      <created>1654722300226</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1654596040553</updated>
+      <updated>1654722300226</updated>
     </task>
-    <task id="LOCAL-00009" summary="Front-End rejestracji">
-      <created>1654598562572</created>
+    <task id="LOCAL-00009" summary="Gotowy projekt">
+      <created>1654897721257</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1654598562572</updated>
+      <updated>1654897721257</updated>
     </task>
-    <task id="LOCAL-00010" summary="Front-End history.jsp">
-      <created>1654600044589</created>
+    <task id="LOCAL-00010" summary="Wzorczec Strategy">
+      <created>1654900187971</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1654600044589</updated>
+      <updated>1654900187971</updated>
     </task>
-    <task id="LOCAL-00011" summary="Front-End produktu audiobook">
-      <created>1654600642388</created>
+    <task id="LOCAL-00011" summary="Wzorczec Singleton">
+      <created>1654900512700</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1654600642388</updated>
+      <updated>1654900512700</updated>
     </task>
-    <task id="LOCAL-00012" summary="Porządkowanie plików">
-      <created>1654601333012</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1654601333012</updated>
-    </task>
-    <task id="LOCAL-00013" summary="New index.jsp">
-      <created>1654714431807</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1654714431807</updated>
-    </task>
-    <task id="LOCAL-00014" summary="new login.jsp">
-      <created>1654714581029</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1654714581029</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Front-end zaakceptowanego zamówienia">
-      <created>1654719216985</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1654719216985</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Poprawa odnośników">
-      <created>1654719765256</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1654719765256</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Poprawa stopki (sticky)">
-      <created>1654720250316</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1654720250316</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Final build">
-      <created>1654929892103</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1654929892103</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +356,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -376,20 +377,12 @@
     <MESSAGE value="Build + poprawka ścieżki do css'ów" />
     <MESSAGE value="zmiana nazwy strony" />
     <MESSAGE value="test" />
-    <MESSAGE value="Start tamplate order.jsp" />
-    <MESSAGE value="Front-End zamówienia książki" />
-    <MESSAGE value="Front-End rejestracji" />
-    <MESSAGE value="Front-End history.jsp" />
-    <MESSAGE value="Front-End produktu audiobook" />
-    <MESSAGE value="Porządkowanie plików" />
-    <MESSAGE value="New index.jsp" />
-    <MESSAGE value="new login.jsp" />
-    <MESSAGE value="Front-end składania zamówienia i template successOrder.jsp" />
-    <MESSAGE value="Front-end zaakceptowanego zamówienia" />
-    <MESSAGE value="Poprawa odnośników" />
-    <MESSAGE value="Poprawa stopki (sticky)" />
-    <MESSAGE value="Final build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final build" />
+    <MESSAGE value="Dodanie logiki rejestracji do bazy wraz z serwletem" />
+    <MESSAGE value="Dodanie logowania" />
+    <MESSAGE value="Gotowy projekt" />
+    <MESSAGE value="Wzorczec Strategy" />
+    <MESSAGE value="Wzorczec Singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wzorczec Singleton" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
