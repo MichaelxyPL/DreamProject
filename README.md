@@ -43,4 +43,4 @@ Użyte oprogramowanie na licencjach zewnętrznych:
 
 Licencja:
 1. Nie wyrażamy zgody na kopiowanie i jakiekolwiek używanie kodu, struktury czy jakiejkolwiek części tego projektu bez pisemnej zgody wszystkich współtwórców.
-2. Powyższa klauzula nie dotyczy pracowników i całej organizacji WSB
+2. Powyższa klauzula nie dotyczy pracowników i całej organizacji Wyższej Szkoły Bankowej w Warszawie
