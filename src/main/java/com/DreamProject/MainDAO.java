@@ -98,6 +98,14 @@ public class MainDAO {
         } catch (Exception e) {
             System.out.println("-----BLAD BAZY-----\n"+e.getMessage());
             System.out.println("-----BLAD BAZY-----\n"+e);
+
+            books.add(new Book(
+                    9,
+                    e.getMessage(),
+                    "błąd - baza danych",
+                    "book",
+                    "błąd - baza danych")
+            );
         }finally{
             this.closeConnect();
         }
