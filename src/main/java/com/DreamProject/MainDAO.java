@@ -13,9 +13,9 @@ import java.util.List;
  */
 public class MainDAO {
     /*konfiguracja połączenia z serwerem*/
-    private final static String DBURL = "jdbc:mysql://localhost/DreamProjct";
-    private final static String DBUSER = "root";
-    private final static String DBPASS = "";
+    private final static String DBURL = "jdbc:mysql:mysqldbserver11333.mysql.database.azure.com";
+    private final static String DBUSER = "adminwsb";
+    private final static String DBPASS = "A@dmin12345#";
     private final static String DBDRIVER = "com.mysql.cj.jdbc.Driver";
 
     //obiekt tworzący połączenie z bazą danych.
