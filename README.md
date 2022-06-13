@@ -3,6 +3,8 @@ Projekt zaliczeniowy w ramach laboratiorów uczelni WSB Warszawa
 
 Michał 11232, Krzysztof 11366, Katarzyna 11241, Dawid 11333
 
+Zbudowana strona dostępna jest pod adresem href=https://dreamproject.azurewebsites.net/
+
 Instrukcja uruchomienia aplikacji:
 
 1. Paczkę DreamProject-1.0-SNAPSHOT.war z katalogu DreamProject/target/ proszę umieścić w katalogu webapp, który znajduje się w katalogu zainstalowanym przez Apache Tomcat.
