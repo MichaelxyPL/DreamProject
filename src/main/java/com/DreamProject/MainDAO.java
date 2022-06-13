@@ -14,7 +14,7 @@ import java.util.List;
 public class MainDAO {
     /*konfiguracja połączenia z serwerem*/
 //    private final static String DBURL = "jdbc:mysql:mysqldbserver11333.mysql.database.azure.com";
-    private final static String DBURL ="jdbc:mysql://mysqldbserver11333.mysql.database.azure.com:3306/dreamproject?useSSL=true&requireSSL=false";
+    private final static String DBURL ="jdbc:mysql://mysqldbserver11333.mysql.database.azure.com:3306/dreamprojct?useSSL=true&requireSSL=false";
     private final static String DBUSER = "adminwsb@mysqldbserver11333";
     private final static String DBPASS = "A@dmin12345#";
     private final static String DBDRIVER = "com.mysql.cj.jdbc.Driver";

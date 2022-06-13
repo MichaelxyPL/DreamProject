@@ -1,18 +1,16 @@
 package com.DreamProject;
 
-        import javax.servlet.RequestDispatcher;
-        import javax.servlet.ServletException;
-        import javax.servlet.ServletRequest;
-        import javax.servlet.ServletResponse;
-        import javax.servlet.annotation.WebServlet;
-        import javax.servlet.http.HttpServlet;
-        import javax.servlet.http.HttpServletRequest;
-        import javax.servlet.http.HttpServletResponse;
-        import java.io.IOException;
-        import java.util.Enumeration;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
-@WebServlet("/loginAuth")
+//@WebServlet("/loginAuth")
 public class LoginAuthorization extends HttpServlet {
+
+    private static final long serialVersionUID= 1917533526447307385L;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Login login=new Login();

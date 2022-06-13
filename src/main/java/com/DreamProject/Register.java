@@ -11,8 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Enumeration;
 
-@WebServlet("/register")
+//@WebServlet("/register")
 public class Register  extends HttpServlet {
+
+    private static final long serialVersionUID= 7299288637596468740L;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Login login=Login.getInstance(

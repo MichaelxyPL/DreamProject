@@ -211,7 +211,7 @@ public class PageBuilder {
                 productSet+= template.showProductBox(book);
             }
         }
-        productSet+=this.formOrder("/DreamProject_war_exploded/addOrder");
+        productSet+=this.formOrder("/addOrder");
 
         return productSet;
 //        return "aaaaaaaaa";
