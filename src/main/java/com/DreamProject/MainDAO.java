@@ -1,13 +1,41 @@
 package com.DreamProject;
-
+import com.azure.security.keyvault.secrets.SecretAsyncClient;
 import org.mindr.BCrypt;
-
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
+import com.azure.core.util.polling.SyncPoller;
+import com.azure.identity.DefaultAzureCredentialBuilder;
+import com.azure.security.keyvault.secrets.SecretClient;
+import com.azure.security.keyvault.secrets.SecretClientBuilder;
+import com.azure.security.keyvault.secrets.models.DeletedSecret;
+import com.azure.security.keyvault.secrets.models.KeyVaultSecret;
+import com.azure.identity.AuthorizationCodeCredential;
+import com.azure.identity.AuthorizationCodeCredentialBuilder;
+import com.azure.identity.AzureCliCredential;
+import com.azure.identity.AzureCliCredentialBuilder;
+import com.azure.identity.ChainedTokenCredential;
+import com.azure.identity.ChainedTokenCredentialBuilder;
+import com.azure.identity.ClientCertificateCredential;
+import com.azure.identity.ClientCertificateCredentialBuilder;
+import com.azure.identity.ClientSecretCredential;
+import com.azure.identity.ClientSecretCredentialBuilder;
+import com.azure.identity.DefaultAzureCredential;
+import com.azure.identity.DefaultAzureCredentialBuilder;
+import com.azure.identity.DeviceCodeCredential;
+import com.azure.identity.DeviceCodeCredentialBuilder;
+import com.azure.identity.IntelliJCredential;
+import com.azure.identity.IntelliJCredentialBuilder;
+import com.azure.identity.InteractiveBrowserCredential;
+import com.azure.identity.InteractiveBrowserCredentialBuilder;
+import com.azure.identity.ManagedIdentityCredential;
+import com.azure.identity.ManagedIdentityCredentialBuilder;
+import com.azure.identity.UsernamePasswordCredential;
+import com.azure.identity.UsernamePasswordCredentialBuilder;
+import com.azure.identity.VisualStudioCodeCredential;
+import com.azure.identity.VisualStudioCodeCredentialBuilder;
 
 //TODO tabela zamówień, zapis zamóenia, pobranie listy zamóień, zmiana statusu na zapłącone, dostarczone.
-
 /**
  * Klasa służąca do łączenia się z bazą
  */
@@ -16,7 +44,7 @@ public class MainDAO {
 //    private final static String DBURL = "jdbc:mysql:mysqldbserver11333.mysql.database.azure.com";
     private final static String DBURL ="jdbc:mysql://mysqldbserver11333.mysql.database.azure.com:3306/dreamprojct?useSSL=true&requireSSL=false";
     private final static String DBUSER = "adminwsb@mysqldbserver11333";
-    private final static String DBPASS = "A@dmin12345#";
+    private static String DBPASS;
     private final static String DBDRIVER = "com.mysql.cj.jdbc.Driver";
 
     //obiekt tworzący połączenie z bazą danych.
@@ -29,6 +57,18 @@ public class MainDAO {
 
     public MainDAO() {
         parser=new SQLParser();
+            DefaultAzureCredential defaultCredential = new DefaultAzureCredentialBuilder()
+                    // KeePass configuration required only for Windows. No configuration needed for Linux / Mac
+                    .intelliJKeePassDatabasePath("C:\\Users\\user\\AppData\\Roaming\\JetBrains\\IdeaIC2020.1\\c.kdbx")
+                    .build();
+
+            // Azure SDK client builders accept the credential as a parameter
+            SecretClient client = new SecretClientBuilder()
+                    .vaultUrl("https://dreamprojectkeyvault.vault.azure.net")
+                    .credential(defaultCredential)
+                    .buildClient();
+            KeyVaultSecret retrievedSecret = client.getSecret("DbPassword");
+            DBPASS = retrievedSecret.getValue();
     }
 
     /**
